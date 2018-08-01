@@ -3,6 +3,9 @@ navbar_brand: false
 menu:
   Home: index.html
   Archives: archives/
+  Experience: categories/exp/
+  Note: categories/note/
+  Gadget: categories/gadget/
 rss: /atom.xml
 
 # Content
@@ -11,10 +14,10 @@ fancybox: false
 
 # Sidebar
 widgets:
-- about         # See also: `about_content`
+# - about         # See also: `about_content`
 - category
-- tag
 - tagcloud
+- tag
 - archive
 - recent_posts
 about_widget_content: >
