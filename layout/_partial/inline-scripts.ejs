@@ -18,6 +18,21 @@
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+
+<script>
+var gitment = new Gitment({
+  //id: '', // 可选。默认为 location.href
+  owner: 'HScarb',
+  repo: 'Blog',
+  oauth: {
+    client_id: 'f15f3873bab8b7913d20',
+    client_secret: 'c50753c0240997659e4cbac9432237b3f16a1271',
+  },
+})
+gitment.render('gitment-thread')
+</script>
+
 <% if (theme.fancybox){ %>
   <%- css('fancybox/jquery.fancybox') %>
   <%- js('fancybox/jquery.fancybox.pack') %>
